@@ -15,4 +15,3 @@ int main()
     std::cout << rez <<rez1 << rez2 ;
     return 0;
 }
-}
