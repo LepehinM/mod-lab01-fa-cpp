@@ -18,12 +18,13 @@ unsigned int faStr1(const char* str) {
                 }
             }
     i+=1;
+        }
     }
     if ((k == 1) && (number == 0)) {
         j+=1;
     }
     return j;
-    }
+    
 }
 unsigned int faStr2(const char* str) {
     int i = 0; int j = 0; int k = 0; int number = 1;
