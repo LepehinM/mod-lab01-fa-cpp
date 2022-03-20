@@ -1,4 +1,5 @@
 // Copyright 2022 UNN-IASR
+#include <iostream>
 #include "fun.h"
 
 int main() {
@@ -8,6 +9,5 @@ const char* test2 = " six monkeys";
 unsigned int rez = faStr1(test);
 unsigned int rez1 = faStr2(test1);
 unsigned int rez2 = faStr3(test2);
-std::cout << rez <<rez1 << rez2;
 return 0;
 }
