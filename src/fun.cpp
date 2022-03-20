@@ -2,7 +2,7 @@
 unsigned int faStr1(const char* str) {
     int i = 0; int j = 0; int k = 0; int number = 1;
     while (str[i] != '\0') {
-		if ((str[i] != ' ')&&(k == 0)) {
+        if ((str[i] != ' ')&&(k == 0)) {
             if ((str[i] < '0') ||(str[i] > '9')) {
             number = 0; k = 1;
             } else if ((str[i] !=' ') && (k == 1 && number == 0)) {
@@ -23,7 +23,8 @@ unsigned int faStr1(const char* str) {
         j+=1;
     }
     return j;
-} }
+    }
+}
 unsigned int faStr2(const char* str) {
     int i = 0; int j = 0; int k = 0; int number = 1;
     while (str[i] != '\0') {
@@ -51,7 +52,7 @@ unsigned int faStr2(const char* str) {
     return j;
 }
 unsigned int faStr3(const char* str) {
-    int i = 0; int j = 0; int k = 0; int l = 0; int number = 0; float s = 0, g = 0;
+    int i = 0, j = 0, k = 0, l = 0, number = 0; float s = 0, g = 0;
     while (str[i] != '\0') {
         if ((str[i] != ' ') && (k == 0)) {
             j+=1; k = 1; l += 1;
@@ -63,11 +64,11 @@ unsigned int faStr3(const char* str) {
         i+=1;
     }
     if (k == 1) {
-        s =s+l;
+        s = s + l;
     }
-    s = s / (float)j;
+    s = s / static_cast<float>(j);
     g = s;
-    if (s - (float)g >= 0.5) {
+    if (s - static_cast<float>(g) >= 0.5) {
         g += 1;
     }
     return g;
