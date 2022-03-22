@@ -9,5 +9,4 @@ const char* test2 = " six monkeys";
 unsigned int rez = faStr1(test);
 unsigned int rez1 = faStr2(test1);
 unsigned int rez2 = faStr3(test2);
-return 0;
 }
