@@ -9,4 +9,5 @@ const char* test2 = " six monkeys";
 int rez = faStr1(test);
 int rez1 = faStr2(test1);
 int rez2 = faStr3(test2);
+return 0;
 }
