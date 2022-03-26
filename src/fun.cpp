@@ -1,4 +1,5 @@
 // Copyright 2022 UNN-IASR
+#include "fun.h"
 unsigned int faStr1(const char* str) {
     int i = 0; int j = 0; int k = 0; int number = 1;
     while (str[i] != '\0') {
