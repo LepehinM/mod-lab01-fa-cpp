@@ -6,10 +6,9 @@ unsigned int faStr1(const char* str) {
         if ((str[i] != ' ')&&(k == 0)) {
             if ((str[i] < '0') ||(str[i] > '9')) {
             number = 0;
-			}
-			k = 1;
-		}
-             else if ((str[i] !=' ') && (k == 1 && number == 0)) {
+            }
+            k = 1;
+        } else if ((str[i] !=' ') && (k == 1 && number == 0)) {
                 if ((str[i] >= '0') && (str[i] <= '9')) {
                     number = 1;
                 }
@@ -21,8 +20,6 @@ unsigned int faStr1(const char* str) {
                 number = 1; k = 0;
                 }
             }
-    
-        
         i+=1;
     }
     if ((k == 1) && (number == 0)) {
@@ -49,8 +46,7 @@ unsigned int faStr2(const char* str) {
                     number = 1; k = 0;
                 } i+=1;
         
-    }
-    if ((k == 1) && (number == 0)) {
+    } if ((k == 1) && (number == 0)) {
         j+=1;
     }
 
@@ -69,10 +65,9 @@ unsigned int faStr3(const char* str) {
         
     }
     if (k == 1) {
-        s = s + l; 
+        s = s + l;
     }
-    s = s / static_cast<float>(j);
-    g = s;
+    s = s / static_cast<float>(j); g = s;
     if (s - static_cast<float>(g) >= 0.5) {
         g += 1;
     }
