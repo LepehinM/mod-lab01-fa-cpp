@@ -45,8 +45,8 @@ unsigned int faStr2(const char* str) {
                     }
                     number = 1; k = 0;
                 } i+=1;
-        
-    } if ((k == 1) && (number == 0)) {
+    }
+    if ((k == 1) && (number == 0)) {
         j+=1;
     }
 
@@ -62,7 +62,6 @@ unsigned int faStr3(const char* str) {
             } else if ((str[i]== ' ') && (k == 1)) {
                 s += l; k = 0; l = 0;
              } i+=1;
-        
     }
     if (k == 1) {
         s = s + l;
