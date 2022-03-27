@@ -4,8 +4,11 @@ unsigned int faStr1(const char* str) {
     int i = 0; int j = 0; int k = 0; int number = 1;
     while (str[i] != '\0') {
         if ((str[i] != ' ')&&(k == 0)) {
-            if ((str[i] < '0') ||(str[i] > '9'))
-            number = 0; k = 1;
+            if ((str[i] < '0') ||(str[i] > '9')) {
+            number = 0;
+			}
+			k = 1;
+		}
              else if ((str[i] !=' ') && (k == 1 && number == 0)) {
                 if ((str[i] >= '0') && (str[i] <= '9')) {
                     number = 1;
@@ -15,12 +18,12 @@ unsigned int faStr1(const char* str) {
                     if (number == 0) {
                         j+=1;
                     }
-                    number = 1; k = 0;
+                number = 1; k = 0;
                 }
             }
     
-        }
-		i+=1;
+        
+        i+=1;
     }
     if ((k == 1) && (number == 0)) {
         j+=1;
@@ -61,10 +64,9 @@ unsigned int faStr3(const char* str) {
         } else if ((str[i] != ' ') && (k == 1)) {
                 l += 1;
             } else if ((str[i]== ' ') && (k == 1)) {
-                    s += l; k = 0; l = 0;
-                } i+=1;
+                s += l; k = 0; l = 0;
+             } i+=1;
         
-    
     }
     if (k == 1) {
         s = s + l; 
